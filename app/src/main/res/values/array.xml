@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_pref">
+        <item>Sort by popularity</item>
+        <item>Sort by rate</item>
+    </string-array>
+
+    <string-array name="sort_values">
+        <item>popularity.desc</item>
+        <item>vote_average.desc</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="60dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:text="Friends"
+                android:textSize="35sp"
+                android:textColor="@color/titleColor"
+                android:background="@color/titleBackgroundColor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/detail_poster"
+                    android:paddingTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:id="@+id/release_date"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="152dp"
+                    android:text="2016"
+                    android:textSize="25sp"
+                    android:textColor="@color/textColor"
+                    android:layout_alignLeft="@+id/detail_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/detail_rate"
+                    android:text="9.0/10"
+                    android:textSize="20sp"
+                    android:paddingLeft="152dp"
+                    android:textColor="@color/textColor"
+                    android:layout_alignLeft="@+id/detail_poster"
+                    android:layout_below="@+id/release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/detail_description"
+                    android:text="What a great movie!"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/detail_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
